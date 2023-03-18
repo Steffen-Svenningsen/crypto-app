@@ -55,105 +55,105 @@ setInterval(() => {
     <div class="container">
       <div class="c-item">
         <div class="icon">
-          <img width="38" height="38" src="../../public/btc.svg" alt="Bitcoin">
+          <img width="38" height="38" src="/btc.svg" alt="Bitcoin">
         </div>
         <h3>Bitcoin</h3>
         <span class="price">{{ "€" + BTC }}</span>
       </div>
       <div class="c-item">
         <div class="icon">
-          <img width="38" height="38" src="../../public/eth.svg" alt="Ethereum">
+          <img width="38" height="38" src="/eth.svg" alt="Ethereum">
         </div>
         <h3>Ethereum</h3>
         <span class="price">{{ "€" + ETH }}</span>
       </div>
       <div class="c-item">
         <div class="icon">
-          <img width="38" height="38" src="../../public/ada.svg" alt="Cardano">
+          <img width="38" height="38" src="/ada.svg" alt="Cardano">
         </div>
         <h3>Cardano</h3>
         <span class="price">{{ "€" + ADA }}</span>
       </div>
       <div class="c-item">
         <div class="icon">
-          <img width="38" height="38" src="../../public/avax.svg" alt="Avalanche">
+          <img width="38" height="38" src="/avax.svg" alt="Avalanche">
         </div>
         <h3>Avalanche</h3>
         <span class="price">{{ "€" + AVAX }}</span>
       </div>
       <div class="c-item">
         <div class="icon">
-          <img width="38" height="38" src="../../public/bnb.svg" alt="BNB">
+          <img width="38" height="38" src="/bnb.svg" alt="BNB">
         </div>
         <h3>BNB</h3>
         <span class="price">{{ "€" + BNB }}</span>
       </div>
       <div class="c-item">
         <div class="icon">
-          <img width="38" height="38" src="../../public/dai.svg" alt="DAI">
+          <img width="38" height="38" src="/dai.svg" alt="DAI">
         </div>
         <h3>DAI</h3>
         <span class="price">{{ "€" + DAI }}</span>
       </div>
       <div class="c-item">
         <div class="icon">
-          <img width="38" height="38" src="../../public/doge.svg" alt="Dogecoin">
+          <img width="38" height="38" src="/doge.svg" alt="Dogecoin">
         </div>
         <h3>Dogecoin</h3>
         <span class="price">{{ "€" + DOGE }}</span>
       </div>
       <div class="c-item">
         <div class="icon">
-          <img width="38" height="38" src="../../public/dot.svg" alt="Polkadot">
+          <img width="38" height="38" src="/dot.svg" alt="Polkadot">
         </div>
         <h3>Polkadot</h3>
         <span class="price">{{ "€" + DOT }}</span>
       </div>
       <div class="c-item">
         <div class="icon">
-          <img width="38" height="38" src="../../public/ltc.svg" alt="Litecoin">
+          <img width="38" height="38" src="/ltc.svg" alt="Litecoin">
         </div>
         <h3>Litecoin</h3>
         <span class="price">{{ "€" + LTC }}</span>
       </div>
       <div class="c-item">
         <div class="icon">
-          <img width="38" height="38" src="../../public/matic.svg" alt="Polygon">
+          <img width="38" height="38" src="/matic.svg" alt="Polygon">
         </div>
         <h3>Polygon</h3>
         <span class="price">{{ "€" + MATIC }}</span>
       </div>
       <div class="c-item">
         <div class="icon">
-          <img width="38" height="38" src="../../public/sol.svg" alt="Solana">
+          <img width="38" height="38" src="/sol.svg" alt="Solana">
         </div>
         <h3>Solana</h3>
         <span class="price">{{ "€" + SOL }}</span>
       </div>
       <div class="c-item">
         <div class="icon">
-          <img width="38" height="38" src="../../public/trx.svg" alt="TRON">
+          <img width="38" height="38" src="/trx.svg" alt="TRON">
         </div>
         <h3>TRON</h3>
         <span class="price">{{ "€" + TRX }}</span>
       </div>
       <div class="c-item">
         <div class="icon">
-          <img width="38" height="38" src="../../public/usdt.svg" alt="Tether">
+          <img width="38" height="38" src="/usdt.svg" alt="Tether">
         </div>
         <h3>Tether</h3>
         <span class="price">{{ "€" + USDT }}</span>
       </div>
       <div class="c-item">
         <div class="icon">
-          <img width="38" height="38" src="../../public/xlm.svg" alt="Stellar">
+          <img width="38" height="38" src="/xlm.svg" alt="Stellar">
         </div>
         <h3>Stellar</h3>
         <span class="price">{{ "€" + XLM }}</span>
       </div>
       <div class="c-item">
         <div class="icon">
-          <img width="38" height="38" src="../../public/xrp.svg" alt="XRP">
+          <img width="38" height="38" src="/xrp.svg" alt="XRP">
         </div>
         <h3>XRP</h3>
         <span class="price">{{ "€" + XRP }}</span>
