@@ -25,7 +25,7 @@ import NavBar from "@/components/NavBar.vue"
     color: white
   
     h1
-      padding: 2rem
+      padding: 2rem 1rem
       font-size: 2rem
       font-weight: 500
   
