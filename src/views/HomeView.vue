@@ -43,11 +43,14 @@ const getCrypto = () => {
     })
 }
 
-getCrypto()
+// getCrypto()
 
+// Making an interval that calls the api all the time will make everything explode!! (It probably won't, but find a solution to this)
+/*
 setInterval(() => {
   getCrypto()
 }, 3000);
+*/
 </script>
 
 <template>
@@ -177,7 +180,7 @@ setInterval(() => {
   color: white
 
   h1
-    padding: 2rem
+    padding: 2rem 1rem
     font-size: 2rem
     font-weight: 500
 
