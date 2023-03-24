@@ -1,7 +1,6 @@
 <script setup>
 import axios from "axios"
 import { ref } from "vue"
-import NavBar from "@/components/NavBar.vue"
 
 const cryptos = ref("")
 const ETH = ref("")
@@ -43,176 +42,149 @@ const getCrypto = () => {
     })
 }
 
-// getCrypto()
+getCrypto()
 
-// Making an interval that calls the api all the time will make everything explode!! (It probably won't, but find a solution to this)
-/*
 setInterval(() => {
   getCrypto()
-}, 3000);
-*/
+}, 300000);
 </script>
 
 <template>
-  <div class="crypto-app">
-    <h1>Crypto App 🚀</h1>
-    <div class="nav-bar">
-        <NavBar/>
+  <div class="container">
+    <div class="c-item">
+      <div class="icon">
+        <img width="38" height="38" src="/btc.svg" alt="Bitcoin">
+      </div>
+      <h3>Bitcoin</h3>
+      <span class="price">{{ "€" + BTC }}</span>
     </div>
-    <div class="container">
-      <div class="c-item">
-        <div class="icon">
-          <img width="38" height="38" src="/btc.svg" alt="Bitcoin">
-        </div>
-        <h3>Bitcoin</h3>
-        <span class="price">{{ "€" + BTC }}</span>
+    <div class="c-item">
+      <div class="icon">
+        <img width="38" height="38" src="/eth.svg" alt="Ethereum">
       </div>
-      <div class="c-item">
-        <div class="icon">
-          <img width="38" height="38" src="/eth.svg" alt="Ethereum">
-        </div>
-        <h3>Ethereum</h3>
-        <span class="price">{{ "€" + ETH }}</span>
+      <h3>Ethereum</h3>
+      <span class="price">{{ "€" + ETH }}</span>
+    </div>
+    <div class="c-item">
+      <div class="icon">
+        <img width="38" height="38" src="/ada.svg" alt="Cardano">
       </div>
-      <div class="c-item">
-        <div class="icon">
-          <img width="38" height="38" src="/ada.svg" alt="Cardano">
-        </div>
-        <h3>Cardano</h3>
-        <span class="price">{{ "€" + ADA }}</span>
+      <h3>Cardano</h3>
+      <span class="price">{{ "€" + ADA }}</span>
+    </div>
+    <div class="c-item">
+      <div class="icon">
+        <img width="38" height="38" src="/avax.svg" alt="Avalanche">
       </div>
-      <div class="c-item">
-        <div class="icon">
-          <img width="38" height="38" src="/avax.svg" alt="Avalanche">
-        </div>
-        <h3>Avalanche</h3>
-        <span class="price">{{ "€" + AVAX }}</span>
+      <h3>Avalanche</h3>
+      <span class="price">{{ "€" + AVAX }}</span>
+    </div>
+    <div class="c-item">
+      <div class="icon">
+        <img width="38" height="38" src="/bnb.svg" alt="BNB">
       </div>
-      <div class="c-item">
-        <div class="icon">
-          <img width="38" height="38" src="/bnb.svg" alt="BNB">
-        </div>
-        <h3>BNB</h3>
-        <span class="price">{{ "€" + BNB }}</span>
+      <h3>BNB</h3>
+      <span class="price">{{ "€" + BNB }}</span>
+    </div>
+    <div class="c-item">
+      <div class="icon">
+        <img width="38" height="38" src="/dai.svg" alt="DAI">
       </div>
-      <div class="c-item">
-        <div class="icon">
-          <img width="38" height="38" src="/dai.svg" alt="DAI">
-        </div>
-        <h3>DAI</h3>
-        <span class="price">{{ "€" + DAI }}</span>
+      <h3>DAI</h3>
+      <span class="price">{{ "€" + DAI }}</span>
+    </div>
+    <div class="c-item">
+      <div class="icon">
+        <img width="38" height="38" src="/doge.svg" alt="Dogecoin">
       </div>
-      <div class="c-item">
-        <div class="icon">
-          <img width="38" height="38" src="/doge.svg" alt="Dogecoin">
-        </div>
-        <h3>Dogecoin</h3>
-        <span class="price">{{ "€" + DOGE }}</span>
+      <h3>Dogecoin</h3>
+      <span class="price">{{ "€" + DOGE }}</span>
+    </div>
+    <div class="c-item">
+      <div class="icon">
+        <img width="38" height="38" src="/dot.svg" alt="Polkadot">
       </div>
-      <div class="c-item">
-        <div class="icon">
-          <img width="38" height="38" src="/dot.svg" alt="Polkadot">
-        </div>
-        <h3>Polkadot</h3>
-        <span class="price">{{ "€" + DOT }}</span>
+      <h3>Polkadot</h3>
+      <span class="price">{{ "€" + DOT }}</span>
+    </div>
+    <div class="c-item">
+      <div class="icon">
+        <img width="38" height="38" src="/ltc.svg" alt="Litecoin">
       </div>
-      <div class="c-item">
-        <div class="icon">
-          <img width="38" height="38" src="/ltc.svg" alt="Litecoin">
-        </div>
-        <h3>Litecoin</h3>
-        <span class="price">{{ "€" + LTC }}</span>
+      <h3>Litecoin</h3>
+      <span class="price">{{ "€" + LTC }}</span>
+    </div>
+    <div class="c-item">
+      <div class="icon">
+        <img width="38" height="38" src="/matic.svg" alt="Polygon">
       </div>
-      <div class="c-item">
-        <div class="icon">
-          <img width="38" height="38" src="/matic.svg" alt="Polygon">
-        </div>
-        <h3>Polygon</h3>
-        <span class="price">{{ "€" + MATIC }}</span>
+      <h3>Polygon</h3>
+      <span class="price">{{ "€" + MATIC }}</span>
+    </div>
+    <div class="c-item">
+      <div class="icon">
+        <img width="38" height="38" src="/sol.svg" alt="Solana">
       </div>
-      <div class="c-item">
-        <div class="icon">
-          <img width="38" height="38" src="/sol.svg" alt="Solana">
-        </div>
-        <h3>Solana</h3>
-        <span class="price">{{ "€" + SOL }}</span>
+      <h3>Solana</h3>
+      <span class="price">{{ "€" + SOL }}</span>
+    </div>
+    <div class="c-item">
+      <div class="icon">
+        <img width="38" height="38" src="/trx.svg" alt="TRON">
       </div>
-      <div class="c-item">
-        <div class="icon">
-          <img width="38" height="38" src="/trx.svg" alt="TRON">
-        </div>
-        <h3>TRON</h3>
-        <span class="price">{{ "€" + TRX }}</span>
+      <h3>TRON</h3>
+      <span class="price">{{ "€" + TRX }}</span>
+    </div>
+    <div class="c-item">
+      <div class="icon">
+        <img width="38" height="38" src="/usdt.svg" alt="Tether">
       </div>
-      <div class="c-item">
-        <div class="icon">
-          <img width="38" height="38" src="/usdt.svg" alt="Tether">
-        </div>
-        <h3>Tether</h3>
-        <span class="price">{{ "€" + USDT }}</span>
+      <h3>Tether</h3>
+      <span class="price">{{ "€" + USDT }}</span>
+    </div>
+    <div class="c-item">
+      <div class="icon">
+        <img width="38" height="38" src="/xlm.svg" alt="Stellar">
       </div>
-      <div class="c-item">
-        <div class="icon">
-          <img width="38" height="38" src="/xlm.svg" alt="Stellar">
-        </div>
-        <h3>Stellar</h3>
-        <span class="price">{{ "€" + XLM }}</span>
+      <h3>Stellar</h3>
+      <span class="price">{{ "€" + XLM }}</span>
+    </div>
+    <div class="c-item">
+      <div class="icon">
+        <img width="38" height="38" src="/xrp.svg" alt="XRP">
       </div>
-      <div class="c-item">
-        <div class="icon">
-          <img width="38" height="38" src="/xrp.svg" alt="XRP">
-        </div>
-        <h3>XRP</h3>
-        <span class="price">{{ "€" + XRP }}</span>
-      </div>
+      <h3>XRP</h3>
+      <span class="price">{{ "€" + XRP }}</span>
     </div>
   </div>
 </template>
 
 <style lang="sass" scoped>
-.crypto-app
-  width: 100%
-  min-height: 100vh
+.container
+  padding: 2rem
   display: flex
   flex-direction: column
-  background-color: #252525
-  font-family: "Helvetica", sans-serif
-  color: white
+  gap: 3rem
+  background-color: rgba(255, 255, 255, 0.05)
+  border-radius: 18px
 
-  h1
-    padding: 2rem 1rem
-    font-size: 2rem
-    font-weight: 500
-
-  .nav-bar
-    margin-left: 1rem
-
-  .container
-    padding: 2rem
+  .c-item
     display: flex
-    flex-direction: column
-    gap: 3rem
-    background-color: rgba(255, 255, 255, 0.05)
-    margin: 0.75rem 1rem 1rem 1rem
-    border-radius: 18px
+    align-items: center
+    gap: 1rem
+    position: relative
+    border-bottom: 1px solid rgba(255, 255, 255, 0.50)
+    padding-bottom: 0.85rem
 
-    .c-item
-      display: flex
-      align-items: center
-      gap: 1rem
-      position: relative
-      border-bottom: 1px solid rgba(255, 255, 255, 0.50)
-      padding-bottom: 0.85rem
+    .icon
+      width: 38px
+      height: 38px
 
-      .icon
-        width: 38px
-        height: 38px
+      img
+        width: 100%
+        height: auto
 
-        img
-          width: 100%
-          height: auto
-
-      .price
-        position: absolute
-        right: 0
+    .price
+      position: absolute
+      right: 0
 </style>
